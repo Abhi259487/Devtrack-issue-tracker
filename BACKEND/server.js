@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 app.use(express.json());
 app.use("/api/auth", authRoutes);
-app.use("/api/projects", projectRoutes);
+app.use("/api/auth/projects", projectRoutes);
 
 
 await connectDB();
